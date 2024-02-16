@@ -7,7 +7,9 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>LandForLife</title>
+	
+	<title>{% block title %} LandForLife {% endblock %}</title>
+	
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="{{asset("/img/favicon.png")}}>
@@ -149,7 +151,7 @@
 		</div>
 	</div>
 	<!-- end hero area -->
-
+{% block body %}
 	<!-- features list section -->
 	<div class="list-section pt-80 pb-80">
 		<div class="container">
@@ -454,7 +456,7 @@
 		</div>
 	</div>
 	<!-- end logo carousel -->
-
+ {% endblock %}
 	<!-- footer -->
 	<div class="footer-area">
 		<div class="container">
